@@ -91,3 +91,15 @@ git commit -m  "..."
 git push
 
  
+Πρώτα να κρύψουμε τα σκουπίδια που παράγει η Python:
+
+cd ~/code/vinea-lab
+cat > .gitignore << 'EOF'
+__pycache__/
+.venv/
+*.pyc
+EOF
+git status
+
+
+
